@@ -1,0 +1,336 @@
+* {
+  /*refering to all elements, */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*changing font line, height & color for the text in the body*/
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  line-height: 1.2;
+  color: rgb(56, 56, 56);
+  background-color: #e9e6e2;
+}
+
+ul {
+  /*removing style type/bullets/circles*/
+  list-style-type: none;
+}
+
+a {
+  /*removing underscores in the navbar & changing color*/
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+}
+
+h1,
+h2,
+h3 {
+  /*making headings thinner & separating headings*/
+  font-weight: 450;
+  line-height: 2;
+  margin: 5px 0;
+}
+
+.fullName {
+  /*specifically changing h1 size used in the banner*/
+  font-weight: bolder;
+}
+
+p {
+  /*paragraph margin*/
+  margin: 15px;
+}
+
+img {
+  /*keep image set to container size*/
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.profilePic {
+  width: 700px;
+  padding: 15px;
+  border: 1px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 700px) {
+  .profilePic {
+    width: 100%;
+  }
+}
+
+.navbar {
+  /*navbar size & color*/
+  background-color: #e9e6e2;
+  color: rgb(56, 56, 56);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+.navbar ul {
+  /*link line up*/
+  display: flex;
+}
+
+.navbar a {
+  /*link attributes*/
+  color: rgb(56, 56, 56);
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  /*navbar effect*/
+  border-top: 1px rgb(56, 56, 56) solid;
+}
+
+/*sub heading editor*/
+.subHeading {
+  background-color: #535e4b;
+  justify-content: center;
+  display: flex;
+  padding: 0 50px;
+}
+
+.subText {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+/*bio editor*/
+.bioBox {
+  height: fit-content;
+  background-color: #918e85;
+  display: flex;
+}
+
+.bioContainer {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.bioHeading {
+  height: fit-content;
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  padding: 0 50px;
+  color: white;
+}
+
+.bioText {
+  text-align: justify;
+}
+
+/*skills editor*/
+
+.skillsBox {
+  height: fit-content;
+  background-color: #918e85;
+  display: flex;
+}
+
+.skillsContainer {
+  max-width: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsHeading {
+  font-weight: 350;
+  height: fit-content;
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  padding: 0 50px;
+  color: white;
+}
+
+.skillsText {
+  text-align: justify;
+}
+
+/*hard & soft skill boxes*/
+.floatBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .floatBox {
+    flex-direction: column;
+  }
+}
+
+.hardSkillsBox {
+  box-sizing: content-box;
+  width: 300px;
+  border-radius: 5px;
+  height: 150px;
+  color: white;
+  background-color: #535e4b;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 10px;
+  margin: 10px 100px;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .hardSkillsBox {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+.hardSkillsHeading {
+  font-weight: 350;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*hard & soft skill boxes*/
+.softSkillsBox {
+  box-sizing: content-box;
+  width: 300px;
+  border-radius: 5px;
+  height: 150px;
+  color: white;
+  background-color: #535e4b;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 10px;
+  margin: 10px 100px;
+
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .softSkillsBox {
+    width: 100%;
+    padding: 0px;
+  }
+}
+.softSkillsHeading {
+  font-weight: 350;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*education & growth text wrapper*/
+.educationGrowthBox {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  justify-content: center;
+  height: fit-content;
+  padding: 15px;
+}
+
+.mainEduHeading {
+  height: fit-content;
+  background-color: #535e4b;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.eduSubheadings {
+  height: fit-content;
+  background-color: #e9e6e2;
+  font-weight: 700;
+  margin: 15px 0px;
+  padding: 0px 15px;
+  color: #261212;
+  text-align: center;
+}
+
+.timePeriod {
+  height: fit-content;
+  background-color: #918e85;
+  text-align: center;
+}
+
+.schoolNames {
+  text-align: center;
+  font-style: oblique;
+}
+
+.schoolText {
+  text-align: justify;
+}
+
+.langFloatbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languages {
+  box-sizing: content-box;
+  width: 300px;
+  border-radius: 5px;
+  height: 150px;
+  color: white;
+  background-color: rgb(56, 56, 56);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 10px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+/*HAMBURGER DROPDOWN EDU*/
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.hamburger > span {
+  width: 100%;
+  height: 5px;
+  background-color: #e9e6e2;
+  transition: 0.5s;
+}
+
+.hamburger.isOpen > span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.isOpen > span:first-child {
+  transform: rotate(40deg) translate(2px, 15px);
+}
+
+.hamburger.isOpen > span:last-child {
+  transform: rotate(-40deg) translate(2px, -15px);
+}
+
+.menu {
+  display: none;
+}
+
+.menu.isOpen {
+  display: block;
+}
